@@ -2,34 +2,57 @@
 <html lang="en">
 <head>
     <title>Users</title>
+    <link rel="stylesheet" href="../css/userStyle.scss">
 </head>
 <body>
-    <h1>Users</h1>
-    <div align="middle">
-        <button type="button" id="AddU" value="Add User" onclick="addUser.htm">Add new user</button>
-        <button type="button" id="ListU" value="List User" onclick="listUsers.htm">List users</button>
-        <button type="button" id="SeachU" value="Search User" onclick="searchUsers.htm">Search user</button>
-        <button type="button" id="UsageReport" value="User Usage Report" onclick="usageReport.htm">User usage report</button>
+    <div class="sidebar">
+        <ul>
+            <img src="../../images/images.jfif" alt="Logo">
+            <li><a href="adminUser.htm">Users</a></li>
+            <li><a href="adminCourses.htm">Courses</a></li>
+            <li><a href="adminEnquiries.htm">Enquiries</a></li>
+            <li><a href="adminCategories.htm">Categories</a></li>
+            <li><a href="adminQual.htm">Qualifications</a></li>
+            <li><a href="adminBatches.htm">Batches</a></li>
+
+        </ul>
     </div>
-    <script type="text/javascript">
-        document.getElementById("AddU").onclick = function () {
-            location.href = "addUser.htm";
-        };
-    </script> 
-    <script type="text/javascript">
-        document.getElementById("ListU").onclick = function () {
-            location.href = "listUsers.htm";
-        };
-    </script> 
-    <script type="text/javascript">
-        document.getElementById("SeachU").onclick = function () {
-            location.href = "searchUsers.htm";
-        };
-    </script> 
-    <script type="text/javascript">
-        document.getElementById("UsageReport").onclick = function () {
-            location.href = "usageReport.htm";
-        };
-    </script> 
+    <nav>
+        <div class="user-name">
+            John Doe
+        </div>
+    </nav>
+    <h1>Users</h1>
+    <div class="tabs">
+  
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <input type="radio" id="tab3" name="tab-control">  
+        <input type="radio" id="tab4" name="tab-control">
+        <ul>
+          <li title="Add User"><label for="tab1" role="button"><br><span>Add User</span></label></li>
+          <li title="List Users"><label for="tab2" role="button"><br><span>List Users</span></label></li>
+          <li title="Search User"><label for="tab3" role="button"><br><span>Search User</span></label></li>    
+          <li title="Usage Report"><label for="tab4" role="button"><br><span>Usage Report</span></label></li>
+        </ul>
+        
+        <div class="slider">
+            <div class="indicator"></div>
+        </div>
+        <div class="content">
+            <section>
+            <h2>Add User</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates quibusdam cum?</section>
+            <section>
+            <h2>List Users</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.</section>
+            <section>
+            <h2>Search User</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.</section>
+            <section>
+            <h2>Usage Report</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+        </div>
+    </div>
 </body>
 </html>
