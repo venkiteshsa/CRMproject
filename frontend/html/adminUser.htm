@@ -5,5 +5,31 @@
 </head>
 <body>
     <h1>Users</h1>
+    <div align="middle">
+        <button type="button" id="AddU" value="Add User" onclick="addUser.htm">Add new user</button>
+        <button type="button" id="ListU" value="List User" onclick="listUsers.htm">List users</button>
+        <button type="button" id="SeachU" value="Search User" onclick="searchUsers.htm">Search user</button>
+        <button type="button" id="UsageReport" value="User Usage Report" onclick="usageReport.htm">User usage report</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("AddU").onclick = function () {
+            location.href = "addUser.htm";
+        };
+    </script> 
+    <script type="text/javascript">
+        document.getElementById("ListU").onclick = function () {
+            location.href = "listUsers.htm";
+        };
+    </script> 
+    <script type="text/javascript">
+        document.getElementById("SeachU").onclick = function () {
+            location.href = "searchUsers.htm";
+        };
+    </script> 
+    <script type="text/javascript">
+        document.getElementById("UsageReport").onclick = function () {
+            location.href = "usageReport.htm";
+        };
+    </script> 
 </body>
 </html>
