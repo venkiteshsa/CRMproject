@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Users</title>
-    <link rel="stylesheet" href="../css/userStyle.scss">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/userStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="sidebar">
-        <ul>
-            <img src="../../images/images.jfif" alt="Logo">
-            <li><a href="adminUser.htm">Users</a></li>
-            <li><a href="adminCourses.htm">Courses</a></li>
-            <li><a href="adminEnquiries.htm">Enquiries</a></li>
-            <li><a href="adminCategories.htm">Categories</a></li>
-            <li><a href="adminQual.htm">Qualifications</a></li>
-            <li><a href="adminBatches.htm">Batches</a></li>
-
-        </ul>
-    </div>
-    <nav>
-        <div class="user-name">
-            John Doe
+    <div class="container">
+        <div class="sidebar-container">
+            <div class="sidebar">
+                <ul>
+                    <li><h1>CRM</h1></li>
+                    <li><a href="adminUser.htm">Users</a></li>
+                    <li><a href="adminCourses.htm">Courses</a></li>
+                    <li><a href="adminEnquiries.htm">Enquiries</a></li>
+                    <li><a href="adminCategories.htm">Categories</a></li>
+                    <li><a href="adminQual.htm">Qualifications</a></li>
+                    <li><a href="adminBatches.htm">Batches</a></li>
+                    <li><a href="adminAuth.htm">Logout</a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <h1>Users</h1>
-    <div class="tabs">
-  
-        <input type="radio" id="tab1" name="tab-control" checked>
-        <input type="radio" id="tab2" name="tab-control">
-        <input type="radio" id="tab3" name="tab-control">  
-        <input type="radio" id="tab4" name="tab-control">
-        <ul>
-          <li title="Add User"><label for="tab1" role="button"><br><span>Add User</span></label></li>
-          <li title="List Users"><label for="tab2" role="button"><br><span>List Users</span></label></li>
-          <li title="Search User"><label for="tab3" role="button"><br><span>Search User</span></label></li>    
-          <li title="Usage Report"><label for="tab4" role="button"><br><span>Usage Report</span></label></li>
-        </ul>
-        
-        <div class="slider">
-            <div class="indicator"></div>
-        </div>
+        <nav class="navbar">
+            <div class="user-name">
+                John Doe
+            </div>
+        </nav>
         <div class="content">
-            <section>
-            <h2>Add User</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates quibusdam cum?</section>
-            <section>
-            <h2>List Users</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.</section>
-            <section>
-            <h2>Search User</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.</section>
-            <section>
-            <h2>Usage Report</h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+            <div class="buttons">
+                <input type="text" placeholder="Search User">
+                <button>Add User</button>
+            </div>
+            <div class="table-container">
+                <table id="users">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>George Fields</td>
+                        <td>george.fields@gmail.com</td>
+                        <td>Qatar</td>
+                    </tr>
+                    <tr>
+                        <td>Rebecca Moore</td>
+                        <td>rebecca.moore@gamil.com</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>jane.doe@gmail.com</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>George Fields</td>
+                        <td>george.fields@gmail.com</td>
+                        <td>Qatar</td>
+                    </tr>
+                    <tr>
+                        <td>Rebecca Moore</td>
+                        <td>rebecca.moore@gmail.com</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>jane.doe@gmail.com</td>
+                        <td>Canada</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </body>
