@@ -108,6 +108,15 @@ body {
     color: var(--orange);
 }
 
+.add-btn {
+    margin-left: 2% !important;
+}
+
+.filter-btn {
+    margin-left: 2% !important;
+    border-radius: 15%;
+}
+
 .buttons {
     margin-left: auto;
     display: flex;
@@ -116,3 +125,9 @@ body {
     max-width: fit-content;
     margin-right: 1em;
 }
+
+.waves-effect.waves-orange .waves-ripple {
+    background-color: var(--orange);
+    opacity: 10%;
+}
+
