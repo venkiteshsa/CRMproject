@@ -8,6 +8,8 @@
     <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="../../css/styles.css">
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -42,11 +44,13 @@
                     </a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="adminCourses.html"><i class="material-icons black-text">local_library</i>Courses
+                    <a class="waves-effect" href="adminCourses.html"><i
+                            class="material-icons black-text">local_library</i>Courses
                     </a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="adminEnquiries.html"><i class="material-icons black-text">query_stats</i>Enquiries
+                    <a class="waves-effect" href="adminEnquiries.html"><i
+                            class="material-icons black-text">query_stats</i>Enquiries
                     </a>
                 </li>
                 <li>
@@ -54,7 +58,8 @@
                     </a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="adminQualifications.html"><i class="material-icons black-text">military_tech</i>Qualifications
+                    <a class="waves-effect" href="adminQualifications.html"><i
+                            class="material-icons black-text">military_tech</i>Qualifications
                     </a>
                 </li>
                 <li>
@@ -63,11 +68,10 @@
                 </li>
                 <div class="footer-container">
                     <div class="bottom">
-                            <div class="divider"></div>
+                        <div class="divider"></div>
                         <button class="logout-button btn-large black waves-effect">
                             <li>
-                                <a class="white-text" href="loginPage.html"><i
-                                        class="material-icons white-text">logout</i>Logout
+                                <a class="white-text" href="loginPage.html"><i class="material-icons white-text">logout</i>Logout
                                 </a>
                             </li>
                         </button>
@@ -93,7 +97,40 @@
             <button class="add-btn btn waves-effect waves-light orange" type="submit" name="action">Add Enquiry
                 <i class="material-icons right">add</i>
             </button>
+
+            <a href="#modal1" class="filter-btn btn-flat modal-trigger btn-medium waves-effect waves-orange"
+                onclick="$('#modal1').modal('open');"><i class="material-icons">filter_list</i></a>
+
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <form action="#">
+                        <p>
+                            <label>
+                              <input name="checkbox" type="checkbox" class="checkbox-orange"/>
+                              <span>Filter 1</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                              <input name="checkbox" type="checkbox" class="checkbox-orange"/>
+                              <span>Filter 2</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                              <input name="checkbox" type="checkbox" class="checkbox-orange"/>
+                              <span>Filter 3</span>
+                            </label>
+                        </p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="modal-close waves-effect waves-orange btn-flat">Apply</a>
+                    <a href="#" class="waves-effect waves-orange btn-flat" onclick="clearFilters()">Clear</a>
+                </div>
+            </div>
         </div>
+
         <div class="card">
             <h1 class="card-title">
                 Card Title
@@ -109,6 +146,14 @@
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="../../js/materialize.min.js"></script>
     <script type="text/javascript" src="../../js/script.js"></script>
+
+    <script>
+        // Modal Trigger
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+    </script>
+
 </body>
 
 </html>
