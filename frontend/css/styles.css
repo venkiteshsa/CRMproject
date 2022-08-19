@@ -32,6 +32,10 @@ body {
     color: var(--white) !important;
 }
 
+.orange-text {
+    color: var(--orange) !important;
+}
+
 .sidenav {
     background-color: var(--white);
 }
@@ -95,11 +99,11 @@ body {
     color: var(--black);
 }
 
-.input-field input[type=text]:focus+label {
+.input-field input:focus+label, .input-field textarea:focus+label {
     color: var(--orange) !important;
 }
 
-.input-field input[type=text]:focus {
+.input-field input:focus, .input-field textarea:focus {
     border-bottom: 1px solid var(--orange) !important;
     box-shadow: 0 1px 0 0 var(--orange) !important;
 }
