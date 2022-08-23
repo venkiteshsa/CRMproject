@@ -164,3 +164,7 @@ body {
     background-color: var(--orange-low);
 }
 
+[type="checkbox"]:checked + span:not(.lever):before {
+    border-right: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
